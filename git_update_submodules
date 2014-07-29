@@ -1,0 +1,42 @@
+#!/bin/sh
+
+GIT_MODULES=$(git submodule | cut -d" " -f3)
+CWD=$(cd `dirname $0` && pwd)
+
+for module in $GIT_MODULES; do
+	cd $module
+
+	git reset --hard
+	git checkout master
+	git pull origin
+
+	git submodule foreach 'git reset --hard'
+
+	git submodule init
+	git submodule update
+
+	git submodule foreach 'git checkout master'
+	git submodule foreach 'git pull origin'
+
+	git commit -a -m "updated to most recent submodules"
+	git push origin master
+	
+	cd $CWD	
+done
+
+# reset all changes made to this checkout (including submodules)
+git reset --hard
+git checkout master
+git pull origin
+
+git submodule foreach 'git reset --hard'
+
+git submodule init
+git submodule update
+
+git submodule foreach 'git checkout master'
+git submodule foreach 'git pull origin'
+
+#git commit -a -m "updated to most recent submodules"
+#git push origin master
+
