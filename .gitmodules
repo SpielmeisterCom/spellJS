@@ -16,3 +16,6 @@
 [submodule "spellWinPhone8"]
 	path = spellWinPhone8
 	url = https://github.com/Spielmeister/spellWinPhone8.git
+[submodule "spellCli"]
+	path = spellCli
+	url = https://github.com/Spielmeister/spellCli
