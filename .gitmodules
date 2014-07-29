@@ -1,0 +1,18 @@
+[submodule "spellCore"]
+	path = spellCore
+	url = https://github.com/Spielmeister/spellCore.git
+[submodule "spellEd"]
+	path = spellEd
+	url = https://github.com/Spielmeister/spellEd.git
+[submodule "spellFlash"]
+	path = spellFlash
+	url = https://github.com/Spielmeister/spellFlash.git
+[submodule "spellAndroid"]
+	path = spellAndroid
+	url = https://github.com/Spielmeister/spellAndroid.git
+[submodule "spelliOS"]
+	path = spelliOS
+	url = https://github.com/Spielmeister/spelliOS.git
+[submodule "spellWinPhone8"]
+	path = spellWinPhone8
+	url = https://github.com/Spielmeister/spellWinPhone8.git
