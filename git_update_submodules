@@ -18,8 +18,8 @@ for module in $GIT_MODULES; do
 	git submodule foreach 'git checkout master'
 	git submodule foreach 'git pull origin'
 
-	git commit -a -m "updated to most recent submodules"
-	git push origin master
+#	git commit -a -m "updated to most recent submodules"
+#	git push origin master
 	
 	cd $CWD	
 done
