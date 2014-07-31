@@ -1,5 +1,7 @@
 # SpellJS Product
 
+## Prerequisites
+
 ### Linux prerequisites
 
 * Install git, make 
@@ -23,7 +25,7 @@ subversion, unzip, vim, zip
 * Install NodeJS
 
 
-**How to get started**
+## How to get started
 
 ```shell
 
